@@ -1,0 +1,11 @@
+.container.skills-container#skills
+    .row
+        .col-12.col-md-12
+            h3.title.section-title.text-center <strong> Skills & Technology </strong>
+            p.h5 <strong> Competitive Programmer. View all Online Judge : </strong>
+                a(href="https://www.stopstalk.com/user/profile/nur_alam" target="_blank") <strong> Click_Here </strong>
+            br
+            each skill in helpers.skills
+                p.technology-title= `${skill.technology}`
+                .progress
+                    .progress-bar(role='progressbar' style='width: 0%;' aria-valuenow=`${skill.percent}` aria-valuemin='0' aria-valuemax='100')

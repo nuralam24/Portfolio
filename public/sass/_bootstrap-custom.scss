@@ -1,0 +1,57 @@
+/*!
+ * You can override all Bootstrap variables in this file.
+ *
+ * If you want to know all available variables, look at:
+ * /node_modules/bootstrap/scss/_variables.scss
+ */
+
+// Font-Family
+$font-family-sans-serif: "Montserrat", Helvetica, Arial, sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+// Alternate Highlights
+$light-blue: #00e1ff;
+$dark-blue: #03bebe;
+$muted-yellow: #ffc200;
+$leaf-green: #63ff00;
+$stark-red: #ff0013;
+
+// Default Highlights
+$highlights: $light-blue;
+
+// Text Color
+$text-color: #000000;
+
+// Navbar links
+$navbar-light-hover-color: $highlights;
+$navbar-light-active-color: $highlights;
+$navbar-light-toggler-border-color: none;
+
+// Input
+$input-border: $highlights;
+
+// Border Radius
+$input-border-radius: 0;
+$btn-border-radius-base: 0;
+
+// Links
+$link-hover-color: $highlights;
+$link-hover-decoration: none;
+
+// Thumbnails
+$thumbnail-padding: 0;
+
+// Transitions
+$links-hover-transition: color 0.3s ease;
+
+// Progress bars
+
+$progress-height: 0.7rem;
+$progress-bar-bg: $highlights;
+// $progress-font-size:                ($font-size-base * .75) !default;
+// $progress-bg:                       $gray-200 !default;
+// $progress-border-radius:            $border-radius !default;
+// $progress-box-shadow:               inset 0 .1rem .1rem rgba($black, .1) !default;
+// $progress-bar-color:                $white !default;
+// $progress-bar-animation-timing:     1s linear infinite !default;
+// $progress-bar-transition:           width .6s ease !default;

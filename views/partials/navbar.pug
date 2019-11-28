@@ -1,0 +1,25 @@
+nav.navbar.fixed-top.navbar-light.navbar-expand-md#nav-main
+
+    a.navbar-brand(href='/' ) Portfolio
+
+    button.navbar-toggler(
+        type='button'
+        data-toggle='collapse' 
+        data-target='#navbarNavAltMarkup' 
+        aria-controls='navbarNavAltMarkup' 
+        aria-expanded='false' 
+        aria-label='Toggle navigation' 
+    )
+        span.navbar-toggler-icon
+            span.bar.top-bar
+            span.bar.middle-bar
+            span.bar.bottom-bar
+
+    .collapse.navbar-collapse#navbarNavAltMarkup
+        ul.navbar-nav.ml-auto.collapse
+            each entry in helpers.navigation
+                li.nav-item
+                    a.nav-link(
+                        href=`${entry.href}`,
+                        class=(currentPath === entry.href ? 'active' : '')
+                    ) #{entry.name}

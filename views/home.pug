@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title= `${title || 'Home'} | ${helpers.siteName}`
+    link(rel='stylesheet', href='/dist/style.css')
+    meta(name="description", content=`${description  || 'Nur'}`)
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+  body(data-spy='scroll' class=bodyClass ? bodyClass : '')
+
+    include partials/navbar
+
+    .jumbotron-fluid.text-center#home
+
+        .container-fluid.background-image
+        img(src="/images/go.jpg", alt="image", style="width:160px;height:200px;margin-left:42%;border-radius:100px;border: 4px solid white;border-shadow: 4px black;")
+
+        h1.hello Hello, I am 
+            span <strong> Nur Alam
+        p Full-Stack
+            span  Web Developer (MERN) </strong>
+
+        svg.icon-arrow-down.align-self-center(version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.5 25.2")
+            polygon(points="22.9,24.8 0.7,3.9 4,0.4 22.9,18.2 41.5,0.4 44.8,3.8")
+
+
+    include partials/about
+    include partials/skills
+    include partials/projects
+    include partials/contact
+    include partials/footer
+
+    block scripts
+      script(src="/dist/app.bundle.js")
