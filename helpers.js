@@ -30,7 +30,7 @@ exports.navigation = [
   },
   {
     name: "My_cv",
-    href: "https://drive.google.com/file/d/19VE-lnCqXQuZRxCYW57mF2UrXxEA6Bmo/view?usp=sharing"
+    href: "https://drive.google.com/file/d/18sVJZI3DMkU-T-IJDpbU07xc3A1LxNcs/view?usp=sharing"
   }
 ];
 
