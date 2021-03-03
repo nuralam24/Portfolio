@@ -24,7 +24,7 @@
     "moment": "^2.21.0",
     "nodemailer": "^4.6.3",
     "popper.js": "^1.13.0",
-    "pug": "^2.0.0-rc.4"
+    "pug": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.5",
